@@ -18,4 +18,13 @@ const store = `[
   }
 }]`
 
-console.log(JSON.parse(store))
+// console.log(JSON.parse(store))
+
+const jsObj1 = JSON.parse(store)
+
+jsObj1.map(product => {
+  let {fields} = product
+  let {company, price} = fields
+})
+
+console.log(product)
